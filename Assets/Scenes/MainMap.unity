@@ -481,6 +481,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 76701176}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &99833968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99833969}
+  - component: {fileID: 99833970}
+  m_Layer: 0
+  m_Name: Trigger_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &99833969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99833968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &99833970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99833968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'Ginny: The bus is here! Should I board it?'
+  Ginny: 1
+  Choice: 0
+  SkipAmount: []
 --- !u!1 &172783051
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +580,64 @@ MonoBehaviour:
     - Drive
   Ginny: 0
   Choice: 1
+  SkipAmount:
+  - 0
+  - 0
+  - 5
+--- !u!1 &193734340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193734341}
+  - component: {fileID: 193734342}
+  m_Layer: 0
+  m_Name: Trigger_9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193734341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193734340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193734342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193734340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'With government support, more residents can invest in their own energy capture
+      systems. Tax credits are one way solar panels can be made more affordable to
+      residents. '
+    - "Surya Electric Co.: Ginny, our power plant can\u2019t keep up with the energy
+      demand. It\u2019s just too hot. We need more power! Please upgrade our energy
+      capture system by installing wind turbines along the hills marked on your map. "
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
 --- !u!1001 &206985298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -777,6 +884,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 235426393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &254785314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 254785315}
+  - component: {fileID: 254785316}
+  m_Layer: 0
+  m_Name: Trigger_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &254785315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254785314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254785316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254785314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Ginny: Sorry I\u2019m late! Oh, I see your solar panels have been installed
+      already. (sad music) I\u2019ll be sure to arrive earlier next time."
+  Ginny: 1
+  Choice: 0
+  SkipAmount:
+  - 1
 --- !u!1 &261835044
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +990,7 @@ MonoBehaviour:
     sentences: []
   Ginny: 0
   Choice: 0
+  SkipAmount: []
 --- !u!114 &261835047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,6 +1099,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 284949833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &285527017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285527018}
+  - component: {fileID: 285527019}
+  m_Layer: 0
+  m_Name: Trigger_11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &285527018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285527017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &285527019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285527017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'Take the light rail. '
+    - Take the bus.
+    - '*HardcodedSectionP2*'
+  Ginny: 0
+  Choice: 1
+  SkipAmount:
+  - 0
+  - '*HardcodedSectionP2Bus*'
+  - '*HardcodedSectionP2Choice*'
 --- !u!1001 &332935199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1282,6 +1495,8 @@ MonoBehaviour:
   ChoiceA: {fileID: 856661143}
   ChoiceB: {fileID: 51733340}
   ChoiceC: {fileID: 549472617}
+  SelectedChoices: 
+  SkipNum: 0
 --- !u!4 &358731530
 Transform:
   m_ObjectHideFlags: 0
@@ -1853,6 +2068,7 @@ GameObject:
   - component: {fileID: 526057378}
   - component: {fileID: 526057377}
   - component: {fileID: 526057376}
+  - component: {fileID: 526057379}
   m_Layer: 5
   m_Name: OptionA
   m_TagString: Untagged
@@ -1974,6 +2190,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526057374}
   m_CullTransparentMesh: 1
+--- !u!114 &526057379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526057374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fa4551a1c35e7409a7faa8bf807d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  Manager: {fileID: 358731529}
+  SkipAmount: 0
 --- !u!1001 &541246866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2221,6 +2452,7 @@ GameObject:
   - component: {fileID: 643942670}
   - component: {fileID: 643942669}
   - component: {fileID: 643942668}
+  - component: {fileID: 643942671}
   m_Layer: 5
   m_Name: OptionB
   m_TagString: Untagged
@@ -2342,6 +2574,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643942666}
   m_CullTransparentMesh: 1
+--- !u!114 &643942671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643942666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fa4551a1c35e7409a7faa8bf807d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  Manager: {fileID: 358731529}
+  SkipAmount: 0
 --- !u!1 &656047495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,6 +2741,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Image: {fileID: 656047497}
   m_Fading: 1
+--- !u!1 &670474600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670474601}
+  - component: {fileID: 670474602}
+  m_Layer: 0
+  m_Name: Trigger_15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &670474601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670474600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &670474602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670474600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'Your car runs low on gas. You pull over to refill. +20 min
+
+'
+    - A passenger car carrying one person emits 96 pounds of CO2 per 100 passenger
+      miles, while a full bus emits only 18 pounds per person.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 2
 --- !u!1 &672444655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,6 +2848,7 @@ MonoBehaviour:
     - "Ginny: I\u2019m on my way!"
   Ginny: 1
   Choice: 0
+  SkipAmount: []
 --- !u!1001 &695588601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2617,6 +2919,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 695588601}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &701362772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 701362773}
+  - component: {fileID: 701362774}
+  m_Layer: 0
+  m_Name: Trigger_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &701362773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701362772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701362774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701362772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - There is a long line at the cash-only ticket counter, but cash is the only
+      form of payment they take. +10 min
+    - Accepting multiple forms of payment increases accessibility for publicly shared
+      forms of transit.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 2
 --- !u!1001 &722821677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3384,6 +3739,7 @@ MonoBehaviour:
     sentences: []
   Ginny: 0
   Choice: 0
+  SkipAmount: []
 --- !u!114 &904514446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4391,6 +4747,7 @@ MonoBehaviour:
       while getting to work on time!
   Ginny: 0
   Choice: 0
+  SkipAmount: []
 --- !u!4 &1153557634
 Transform:
   m_ObjectHideFlags: 0
@@ -4404,6 +4761,23 @@ Transform:
   m_Children:
   - {fileID: 672444656}
   - {fileID: 172783052}
+  - {fileID: 99833969}
+  - {fileID: 1664793559}
+  - {fileID: 701362773}
+  - {fileID: 2076448025}
+  - {fileID: 254785315}
+  - {fileID: 1813295164}
+  - {fileID: 193734341}
+  - {fileID: 1760603835}
+  - {fileID: 285527018}
+  - {fileID: 1780799307}
+  - {fileID: 1980744254}
+  - {fileID: 1645791627}
+  - {fileID: 670474601}
+  - {fileID: 1686561169}
+  - {fileID: 1226303371}
+  - {fileID: 1181610652}
+  - {fileID: 1531575623}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4493,6 +4867,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1164597784}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1181610651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1181610652}
+  - component: {fileID: 1181610653}
+  m_Layer: 0
+  m_Name: Trigger_18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181610652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181610651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1181610653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181610651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Ginny arrives at the hills and installs wind turbines. (wind powers on + happy
+      music)\r\nSurya Electric Co.: Nicely done, Ginny! \r"
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
 --- !u!1 &1186346184
 GameObject:
   m_ObjectHideFlags: 0
@@ -4559,6 +4983,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1226303370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1226303371}
+  - component: {fileID: 1226303372}
+  m_Layer: 0
+  m_Name: Trigger_17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1226303371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226303370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226303372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226303370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Not all transit options in the modern world are feasible with walking or biking.
+      There is a need to implement green alternatives for longer distances.
+    - "Surya Electric Co.: Ginny, you\u2019re late! Next time, please make sure you
+      arrive on time to complete the job. (sad music) "
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 1
 --- !u!1001 &1229944135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4925,6 +5402,7 @@ GameObject:
   - component: {fileID: 1301511128}
   - component: {fileID: 1301511127}
   - component: {fileID: 1301511126}
+  - component: {fileID: 1301511129}
   m_Layer: 5
   m_Name: OptionC
   m_TagString: Untagged
@@ -5046,6 +5524,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301511124}
   m_CullTransparentMesh: 1
+--- !u!114 &1301511129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301511124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fa4551a1c35e7409a7faa8bf807d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
+  Manager: {fileID: 358731529}
+  SkipAmount: 0
 --- !u!1001 &1306638932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5318,6 +5811,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1488444165}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1531575622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531575623}
+  - component: {fileID: 1531575624}
+  m_Layer: 0
+  m_Name: Trigger_19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531575623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531575622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531575624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531575622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Weather can affect the energy capture efficiency of solar panels. On a cloudy
+      but windy day, wind turbines may be a more effective energy source.
+    - "Surya Electric Co.: With the completion of our new wind turbines, we can now
+      produce enough electricity to keep the whole city\u2019s power grid online.
+      Wait, what\u2019s that\u2026? It seems we have a resident still complaining
+      about their power being out. Ginny, please head over and investigate the problem. "
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
 --- !u!1001 &1532841133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5930,6 +6477,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1644862699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1645791626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645791627}
+  - component: {fileID: 1645791628}
+  m_Layer: 0
+  m_Name: Trigger_14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645791627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645791626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645791628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645791626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - The bus shows up behind schedule. +20 min.
+    - Bus reliability is one of the main issues riders have with public transport,
+      rivaling only bus frequency. Apps can help address this by providing real-time
+      bus location information.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 3
+--- !u!1 &1664793558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664793559}
+  - component: {fileID: 1664793560}
+  m_Layer: 0
+  m_Name: Trigger_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1664793559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664793558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664793560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664793558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Take the Bus
+    - Keep *0-1:Walking,2:Biking/*
+  Ginny: 0
+  Choice: 1
+  SkipAmount:
+  - 0
+  - '*0-1:2,2:1/*'
 --- !u!1001 &1672074152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6062,6 +6714,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1684885971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1686561168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1686561169}
+  - component: {fileID: 1686561170}
+  m_Layer: 0
+  m_Name: Trigger_16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686561169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686561168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1686561170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686561168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'You''re too tired to keep going and turn back. +20 min
+
+'
+    - Not all transit options in the modern world are feasible with walking or biking.
+      There is a need to implement green alternatives for longer distances.
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
 --- !u!1001 &1691069410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6252,6 +6957,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1716380078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1760603834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760603835}
+  - component: {fileID: 1760603836}
+  m_Layer: 0
+  m_Name: Trigger_10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760603835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760603834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1760603836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760603834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Ginny: Let\u2019s do this!"
+  Ginny: 1
+  Choice: 0
+  SkipAmount: []
 --- !u!1001 &1763021857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6431,6 +7185,59 @@ MonoBehaviour:
     sentences: []
   Ginny: 0
   Choice: 0
+  SkipAmount: []
+--- !u!1 &1780799306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1780799307}
+  - component: {fileID: 1780799308}
+  m_Layer: 0
+  m_Name: Trigger_12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1780799307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780799306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1780799308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780799306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Rail is one of the most efficient and low greenhouse gas emitting modes of
+      transportation. Three-quarters of passenger railway movement relies on electricity
+      making it easier to transfer to renewable energy in the future.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 5
 --- !u!1 &1786791106
 GameObject:
   m_ObjectHideFlags: 0
@@ -6597,6 +7404,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1808137315}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1813295163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1813295164}
+  - component: {fileID: 1813295165}
+  m_Layer: 0
+  m_Name: Trigger_8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1813295164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813295163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813295165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813295163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Ginny: Hi there! I\u2019m Ginny from Surya Electric Co. and I\u2019m here
+      to help you install solar panels. (construction sound + happy music)"
+  Ginny: 1
+  Choice: 0
+  SkipAmount: []
 --- !u!1001 &1819983682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7189,6 +8046,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1971358761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1980744253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980744254}
+  - component: {fileID: 1980744255}
+  m_Layer: 0
+  m_Name: Trigger_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1980744254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980744253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1980744255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980744253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - You wait a long time for the bus to show up, but then there is no room to bring
+      your bike. Turn back. +30 min
+    - Transit options accommodating bikes, wheelchairs, and large items are crucial
+      to mobility.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 3
 --- !u!1001 &1998146125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7631,6 +8541,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 2072452826}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2076448024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076448025}
+  - component: {fileID: 2076448026}
+  m_Layer: 0
+  m_Name: Trigger_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076448025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076448024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076448026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076448024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - There is no bike lane and you spend the whole way dodging cars. +15 min.
+    - Lack of well-planned bike lanes is a major issue for bike commuters.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 1
 --- !u!1001 &2079688665
 PrefabInstance:
   m_ObjectHideFlags: 0
