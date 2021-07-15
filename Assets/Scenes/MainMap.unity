@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 51733341}
   - component: {fileID: 51733343}
   - component: {fileID: 51733342}
+  - component: {fileID: 51733344}
   m_Layer: 5
   m_Name: OptionBText
   m_TagString: Untagged
@@ -264,6 +265,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51733340}
   m_CullTransparentMesh: 1
+--- !u!114 &51733344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51733340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e4de51f6feaef4983138bbbb1e63b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 0}
+  Image: {fileID: 51733342}
+  m_Fading: 0
 --- !u!1 &53702867
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,8 +291,9 @@ GameObject:
   - component: {fileID: 53702868}
   - component: {fileID: 53702870}
   - component: {fileID: 53702869}
+  - component: {fileID: 53702871}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,6 +362,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53702867}
   m_CullTransparentMesh: 1
+--- !u!114 &53702871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53702867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e4de51f6feaef4983138bbbb1e63b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 0}
+  Image: {fileID: 53702869}
+  m_Fading: 0
 --- !u!1001 &61359964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,6 +562,61 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
+  SoundFile: 
+--- !u!1 &112377950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112377951}
+  - component: {fileID: 112377952}
+  m_Layer: 0
+  m_Name: Trigger_21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112377951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112377950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112377952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112377950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - There is a lot of traffic on the road. However, the bus breezes by in the bus
+      lane. +10 min.
+    - Allocating deliberate space to public transit can enhance its reliability and
+      provide incentive for new prospective riders.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 2
+  SoundFile: 
 --- !u!1 &172783051
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +671,7 @@ MonoBehaviour:
   - 0
   - 0
   - 5
+  SoundFile: 
 --- !u!1 &193734340
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +726,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1001 &206985298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -884,6 +973,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 235426393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &242188581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 242188582}
+  - component: {fileID: 242188583}
+  m_Layer: 0
+  m_Name: Trigger_26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &242188582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242188581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &242188583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242188581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'Surya Electric Co.: Great job, Ginny! We have restored power to the whole
+      city--and made much progress in creating a cleaner future. Thanks for helping
+      us get through summer in Surya! (happy music)'
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
+  SoundFile: 
 --- !u!1 &254785314
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +1076,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 1
+  SoundFile: 
 --- !u!1 &261835044
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1133,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!114 &261835047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1296,7 @@ MonoBehaviour:
   - 0
   - '*HardcodedSectionP2Bus*'
   - '*HardcodedSectionP2Choice*'
+  SoundFile: 
 --- !u!1001 &332935199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1495,8 +1639,12 @@ MonoBehaviour:
   ChoiceA: {fileID: 856661143}
   ChoiceB: {fileID: 51733340}
   ChoiceC: {fileID: 549472617}
+  ChoiceAobj: {fileID: 526057374}
+  ChoiceBobj: {fileID: 643942666}
+  ChoiceCobj: {fileID: 1301511124}
   SelectedChoices: 
   SkipNum: 0
+  SoundPlayer: {fileID: 903870655}
 --- !u!4 &358731530
 Transform:
   m_ObjectHideFlags: 0
@@ -1878,6 +2026,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &461742472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461742473}
+  - component: {fileID: 461742474}
+  m_Layer: 0
+  m_Name: Trigger_22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461742473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461742472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &461742474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461742472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - You get stuck in traffic. +30 min.
+    - Public transportation can work not only to speed the transition to zero emissions,
+      but also to clear out road traffic in congested areas.
+  Ginny: 0
+  Choice: 0
+  SkipAmount:
+  - 1
+  SoundFile: 
 --- !u!1 &480294628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,7 +2096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &480294629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2205,6 +2406,8 @@ MonoBehaviour:
   type: 1
   Manager: {fileID: 358731529}
   SkipAmount: 0
+  MusicSource: {fileID: 903870655}
+  MusicClip: {fileID: 8300000, guid: b0f59cf64f144404b9d056c9fe219da3, type: 3}
 --- !u!1001 &541246866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2302,6 +2505,7 @@ GameObject:
   - component: {fileID: 549472618}
   - component: {fileID: 549472620}
   - component: {fileID: 549472619}
+  - component: {fileID: 549472621}
   m_Layer: 5
   m_Name: OptionCText
   m_TagString: Untagged
@@ -2370,6 +2574,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549472617}
   m_CullTransparentMesh: 1
+--- !u!114 &549472621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549472617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e4de51f6feaef4983138bbbb1e63b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 0}
+  Image: {fileID: 549472619}
+  m_Fading: 0
 --- !u!1001 &603895240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2589,6 +2808,8 @@ MonoBehaviour:
   type: 2
   Manager: {fileID: 358731529}
   SkipAmount: 0
+  MusicSource: {fileID: 903870655}
+  MusicClip: {fileID: 8300000, guid: b0f59cf64f144404b9d056c9fe219da3, type: 3}
 --- !u!1 &656047495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,6 +2961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 656047497}
+  Image: {fileID: 0}
   m_Fading: 1
 --- !u!1 &670474600
 GameObject:
@@ -2795,6 +3017,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 2
+  SoundFile: 
 --- !u!1 &672444655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,6 +3072,7 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1001 &695588601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2972,6 +3196,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 2
+  SoundFile: 
 --- !u!1001 &722821677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3415,6 +3640,7 @@ GameObject:
   - component: {fileID: 856661144}
   - component: {fileID: 856661146}
   - component: {fileID: 856661145}
+  - component: {fileID: 856661147}
   m_Layer: 5
   m_Name: OptionAText
   m_TagString: Untagged
@@ -3485,6 +3711,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856661143}
   m_CullTransparentMesh: 1
+--- !u!114 &856661147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856661143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e4de51f6feaef4983138bbbb1e63b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 0}
+  Image: {fileID: 856661145}
+  m_Fading: 0
 --- !u!1001 &861777077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3684,6 +3925,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875409778}
   m_CullTransparentMesh: 1
+--- !u!1 &903870654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903870656}
+  - component: {fileID: 903870655}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &903870655
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903870654}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cae6335877db19a4e818581ec490bb23, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 0
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &903870656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903870654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 505.46237, y: 301.00388, z: -29.434824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &904514443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +4108,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!114 &904514446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,6 +4268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Image: {fileID: 945277286}
+  Image: {fileID: 0}
   m_Fading: 1
 --- !u!114 &945277286
 MonoBehaviour:
@@ -4748,6 +5118,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!4 &1153557634
 Transform:
   m_ObjectHideFlags: 0
@@ -4778,6 +5149,13 @@ Transform:
   - {fileID: 1226303371}
   - {fileID: 1181610652}
   - {fileID: 1531575623}
+  - {fileID: 1667016588}
+  - {fileID: 112377951}
+  - {fileID: 461742473}
+  - {fileID: 1328754227}
+  - {fileID: 2019464684}
+  - {fileID: 1949629403}
+  - {fileID: 242188582}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4917,6 +5295,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1 &1186346184
 GameObject:
   m_ObjectHideFlags: 0
@@ -5036,6 +5415,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 1
+  SoundFile: 
 --- !u!1001 &1229944135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5539,6 +5919,8 @@ MonoBehaviour:
   type: 3
   Manager: {fileID: 358731529}
   SkipAmount: 0
+  MusicSource: {fileID: 903870655}
+  MusicClip: {fileID: 8300000, guid: b0f59cf64f144404b9d056c9fe219da3, type: 3}
 --- !u!1001 &1306638932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5679,6 +6061,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1320553807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1328754226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328754227}
+  - component: {fileID: 1328754228}
+  m_Layer: 0
+  m_Name: Trigger_23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328754227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328754226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328754228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328754226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - You get stuck in traffic. +35 min.
+    - Public transportation can work not only to speed the transition to zero emissions,
+      but also to clear out road traffic in congested areas.
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
+  SoundFile: 
 --- !u!1001 &1362534685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5865,6 +6299,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1001 &1532841133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6530,6 +6965,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 3
+  SoundFile: 
 --- !u!1 &1664793558
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,6 +7018,60 @@ MonoBehaviour:
   SkipAmount:
   - 0
   - '*0-1:2,2:1/*'
+  SoundFile: 
+--- !u!1 &1667016587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1667016588}
+  - component: {fileID: 1667016589}
+  m_Layer: 0
+  m_Name: Trigger_20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1667016588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667016587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1667016589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667016587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Take the bus
+    - '*HardcodedSectionP3*'
+  Ginny: 0
+  Choice: 1
+  SkipAmount:
+  - 0
+  - '*HardcodedSectionP3Choice*'
+  SoundFile: 
 --- !u!1001 &1672074152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6767,6 +7257,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1001 &1691069410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7006,6 +7497,7 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1001 &1763021857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7186,6 +7678,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1 &1780799306
 GameObject:
   m_ObjectHideFlags: 0
@@ -7238,6 +7731,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 5
+  SoundFile: 
 --- !u!1 &1786791106
 GameObject:
   m_ObjectHideFlags: 0
@@ -7454,6 +7948,7 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
+  SoundFile: 
 --- !u!1001 &1819983682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7906,6 +8401,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 1899815739}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1949629402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1949629403}
+  - component: {fileID: 1949629404}
+  m_Layer: 0
+  m_Name: Trigger_25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1949629403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949629402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1949629404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949629402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - "Ginny: I\u2019ve got just the solution! We\u2019re going to build a power
+      storage facility to produce and store energy locally. (power up electric hum)
+      It worked!"
+  Ginny: 1
+  Choice: 0
+  SkipAmount: []
+  SoundFile: 
 --- !u!1001 &1963705142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8099,6 +8646,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 3
+  SoundFile: 
 --- !u!1001 &1998146125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8239,6 +8787,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6549777377212909157, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
   m_PrefabInstance: {fileID: 2009131191}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2019464683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019464684}
+  - component: {fileID: 2019464685}
+  m_Layer: 0
+  m_Name: Trigger_24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019464684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019464683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1153557634}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019464685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019464683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc4417df4ac3e14ca167ab16dab0f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'Ginny arrives and investigates the situation. It turns out that there was
+      a power line failure.
+
+'
+    - Power lines have an increased risk of failure and energy loss from having to
+      travel too far to deliver electricity. Establishing decentralized power grids
+      can increase energy efficiency and reduce reliance on fossil fuels.
+  Ginny: 0
+  Choice: 0
+  SkipAmount: []
+  SoundFile: 
 --- !u!1 &2027025024
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,7 +8997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2067061154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8592,6 +9196,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 1
+  SoundFile: 
 --- !u!1001 &2079688665
 PrefabInstance:
   m_ObjectHideFlags: 0

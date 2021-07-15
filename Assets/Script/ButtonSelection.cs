@@ -13,6 +13,7 @@ public class ButtonSelection : MonoBehaviour
     public DialogueManager Manager;
     public int SkipAmount = 0;
 
+
     public void Start()
     {
         recttransform = GetComponent<RectTransform>();
@@ -46,6 +47,8 @@ public void DoInteraction()
         {
             Application.Quit();
         }*/
+        //MusicSource.Play();
+        ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Select");
         Manager.SelectedChoices.Add(type);
         Manager.EndDialogue(SkipAmount);
     }

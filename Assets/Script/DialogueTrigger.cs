@@ -9,6 +9,7 @@ public class DialogueTrigger : MonoBehaviour
     public bool Ginny = false;
     public bool Choice = false;
     public List<string> SkipAmount = new List<string>();
+    public string SoundFile;
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue,SkipAmount, Ginny, Choice);

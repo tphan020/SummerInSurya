@@ -20,11 +20,15 @@ public class DialogueManager : MonoBehaviour
     public GameObject ChooseDialogue;
     public GameObject ChoiceA;
     public GameObject ChoiceB;
-    public GameObject ChoiceC;
+    public GameObject ChoiceC; 
+    public GameObject ChoiceAobj;
+    public GameObject ChoiceBobj;
+    public GameObject ChoiceCobj;
     public DateTime Cooldown = DateTime.UtcNow;
     private string CurrentPhase = "";
     public List<int> SelectedChoices = new List<int>();
     public int SkipNum = 0;
+    public AudioSource SoundPlayer;
     void Start()
     {
         sentences = new Queue<string>();
@@ -145,6 +149,14 @@ public class DialogueManager : MonoBehaviour
     public void HandleChooseMenu(Dialogue dialogue, List<string> SkipAmount)
     {
         sentences.Clear();
+        if (dialogue.sentences.Length == 2)
+        {
+            ChoiceCobj.SetActive(false);
+        }
+        else
+        {
+            ChoiceCobj.SetActive(true);
+        }
         for (int i = 0; i < dialogue.sentences.Length; i++)
         {
             int SkipVal = -1;
@@ -181,26 +193,34 @@ public class DialogueManager : MonoBehaviour
             if (i == 0)
             {
                 ChoiceA.GetComponent<Text>().text = sentence;
-                GameObject.Find("OptionA").GetComponent<ButtonSelection>().SkipAmount = SkipVal == -1 ? GetSkipAmount(SkipAmount[0]) : SkipVal;
+                ChoiceAobj.GetComponent<ButtonSelection>().SkipAmount = SkipVal == -1 ? GetSkipAmount(SkipAmount[0]) : SkipVal;
             }
             else if (i == 1)
             {
                 ChoiceB.GetComponent<Text>().text = sentence;
-                GameObject.Find("OptionB").GetComponent<ButtonSelection>().SkipAmount = SkipVal == -1 ? GetSkipAmount(SkipAmount[1]) : SkipVal;
+                ChoiceBobj.GetComponent<ButtonSelection>().SkipAmount = SkipVal == -1 ? GetSkipAmount(SkipAmount[1]) : SkipVal;
             }
             else if ( i == 2)
             {
                 ChoiceC.GetComponent<Text>().text = sentence;
-                GameObject.Find("OptionC").GetComponent<ButtonSelection>().SkipAmount = SkipVal == -1 ? GetSkipAmount(SkipAmount[2]) : SkipVal;
+                ChoiceCobj.GetComponent<ButtonSelection>().SkipAmount = SkipVal == -1 ? GetSkipAmount(SkipAmount[2]) : SkipVal;
             }
         }
-        if (dialogue.sentences.Length == 2)
+        GameObject Title = GameObject.Find("Title");
+        GameObject ObtainA = GameObject.Find("OptionAText");
+        GameObject ObtainB = GameObject.Find("OptionBText");
+        GameObject ObtainC = GameObject.Find("OptionCText");
+
+        Title.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+        ObtainA.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+        ObtainB.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+        Title.GetComponent<FadeInOutText>().m_Fading = true;
+        ObtainA.GetComponent<FadeInOutText>().m_Fading = true;
+        ObtainB.GetComponent<FadeInOutText>().m_Fading = true;
+        if (ObtainC != null)
         {
-            GameObject.Find("OptionC").SetActive(false);
-        }
-        else
-        {
-            GameObject.Find("OptionC").SetActive(true);
+            ObtainC.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            ObtainC.GetComponent<FadeInOutText>().m_Fading = true;
         }
         sentences.Enqueue("");
     }
