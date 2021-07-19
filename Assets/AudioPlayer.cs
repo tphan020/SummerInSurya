@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called before the first frame update    
+    public AudioClip Ring;
     public AudioClip Turbine;
     public AudioClip Train;
     public AudioClip Select;
@@ -20,8 +21,9 @@ public class AudioPlayer : MonoBehaviour
     public AudioClip BusyStreet;
     public AudioClip Bus;
     public AudioClip BicycleDriving;
-    public AudioClip BackButton;
-
+    public AudioClip BackButton; 
+    public AudioClip Happy;
+    public AudioClip Sad;
     public AudioSource AudioSource;
     void Start()
     {
@@ -32,6 +34,9 @@ public class AudioPlayer : MonoBehaviour
     {
         switch(type)
         {
+            case "Ring":
+                AudioSource.PlayOneShot(Ring, 1.0f);
+                break;
             case "Turbine":
                 AudioSource.PlayOneShot(Turbine, 1.0f);
                 break;
@@ -76,6 +81,15 @@ public class AudioPlayer : MonoBehaviour
                 break;
             case "BackButton":
                 AudioSource.PlayOneShot(BackButton, 1.0f);
+                break;
+            case "Construction":
+                AudioSource.PlayOneShot(Construction, 1.0f);
+                break;
+            case "Sad":
+                AudioSource.PlayOneShot(Sad, 1.0f);
+                break;
+            case "Happy":
+                AudioSource.PlayOneShot(Happy, 1.0f);
                 break;
             default:
                 break;

@@ -562,7 +562,7 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &112377950
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +616,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 2
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &172783051
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
   - 0
   - 0
   - 5
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &193734340
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &206985298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1024,7 +1024,8 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile:
+  - Happy
 --- !u!1 &254785314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1077,8 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 1
-  SoundFile: 
+  SoundFile:
+  - Sad
 --- !u!1 &261835044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1135,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!114 &261835047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1296,7 +1298,7 @@ MonoBehaviour:
   - 0
   - '*HardcodedSectionP2Bus*'
   - '*HardcodedSectionP2Choice*'
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &332935199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1643,6 +1645,7 @@ MonoBehaviour:
   ChoiceBobj: {fileID: 643942666}
   ChoiceCobj: {fileID: 1301511124}
   SelectedChoices: 
+  SoundFiles: []
   SkipNum: 0
   SoundPlayer: {fileID: 903870655}
 --- !u!4 &358731530
@@ -2078,7 +2081,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 1
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &480294628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,7 +2297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.281, y: 57}
+  m_AnchoredPosition: {x: 28, y: 57}
   m_SizeDelta: {x: 400.473, y: 91.8344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526057376
@@ -2406,8 +2409,6 @@ MonoBehaviour:
   type: 1
   Manager: {fileID: 358731529}
   SkipAmount: 0
-  MusicSource: {fileID: 903870655}
-  MusicClip: {fileID: 8300000, guid: b0f59cf64f144404b9d056c9fe219da3, type: 3}
 --- !u!1001 &541246866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2696,7 +2697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.8945, y: -30.705}
+  m_AnchoredPosition: {x: 1.6134, y: -41.787}
   m_SizeDelta: {x: 347.7, y: 83.575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643942668
@@ -2808,8 +2809,6 @@ MonoBehaviour:
   type: 2
   Manager: {fileID: 358731529}
   SkipAmount: 0
-  MusicSource: {fileID: 903870655}
-  MusicClip: {fileID: 8300000, guid: b0f59cf64f144404b9d056c9fe219da3, type: 3}
 --- !u!1 &656047495
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,7 +3016,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 2
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &672444655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,7 +3071,8 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile:
+  - Ring
 --- !u!1001 &695588601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3196,7 +3196,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 2
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &722821677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3935,6 +3935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 903870656}
   - component: {fileID: 903870655}
+  - component: {fileID: 903870657}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -4052,6 +4053,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &903870657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903870654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ee74c740a0a664db13b6c1a6ee490e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ring: {fileID: 8300000, guid: 67dd519bbce3c654a82a0bed198ad811, type: 3}
+  Turbine: {fileID: 8300000, guid: 09aeb2349e0fad844aa910766b321514, type: 3}
+  Train: {fileID: 8300000, guid: 9fa06b416b9fdaa41a858cebc6f4ae1f, type: 3}
+  Select: {fileID: 8300000, guid: 714a831cda2d65c41bd8df52af7af49a, type: 3}
+  QuietParkBirds: {fileID: 8300000, guid: c97055e6b9b362448a1f15b6cf9b23b5, type: 3}
+  PowerOn: {fileID: 8300000, guid: 00219ea5429dd6142b25cb60c20a774b, type: 3}
+  MapOpening: {fileID: 8300000, guid: 115c4e068ffb51444ad60e023f583b22, type: 3}
+  MapClosing: {fileID: 8300000, guid: ef15f9bedfb5e7949b3df7d42fdb9d3c, type: 3}
+  HoverButton: {fileID: 8300000, guid: 3755c2cad0b9dfe458a6e8dae7e615f5, type: 3}
+  HighSpeedTrain: {fileID: 8300000, guid: 9fa06b416b9fdaa41a858cebc6f4ae1f, type: 3}
+  Construction: {fileID: 8300000, guid: 9988edbe0d46adc469690d7d0fa033f9, type: 3}
+  CarEngine: {fileID: 8300000, guid: 5840d8e776674414a91c57eff588a563, type: 3}
+  CarDriving: {fileID: 8300000, guid: c6c82e857002ddf4687038e25aabb58d, type: 3}
+  BusyStreet: {fileID: 8300000, guid: 27107bc931b02184aafe867737aa03c0, type: 3}
+  Bus: {fileID: 8300000, guid: 7578a089b51cdb240a944ca431e88c67, type: 3}
+  BicycleDriving: {fileID: 8300000, guid: 5efa03c2e3f0e53499cef6ccf03617fa, type: 3}
+  BackButton: {fileID: 8300000, guid: 0979f93f6c8aaff4fa6a760819f0012e, type: 3}
+  Happy: {fileID: 8300000, guid: 0aac244db46813e4ab36a4ff9c72ac0c, type: 3}
+  Sad: {fileID: 8300000, guid: 4240a75455797954abf48fefe7b27bb2, type: 3}
+  AudioSource: {fileID: 903870655}
 --- !u!1 &904514443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,7 +4141,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!114 &904514446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5118,7 +5151,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!4 &1153557634
 Transform:
   m_ObjectHideFlags: 0
@@ -5291,11 +5324,13 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "Ginny arrives at the hills and installs wind turbines. (wind powers on + happy
-      music)\r\nSurya Electric Co.: Nicely done, Ginny! \r"
-  Ginny: 0
+      music)\r"
+    - "Surya Electric Co.: Nicely done, Ginny! \r"
+  Ginny: 1
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile:
+  - Turbine
 --- !u!1 &1186346184
 GameObject:
   m_ObjectHideFlags: 0
@@ -5407,15 +5442,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - Not all transit options in the modern world are feasible with walking or biking.
-      There is a need to implement green alternatives for longer distances.
+    - Ginny arrives at the hills and finds someone else installing the wind turbines
+      already. (Construction sounds + wind powers on)
     - "Surya Electric Co.: Ginny, you\u2019re late! Next time, please make sure you
       arrive on time to complete the job. (sad music) "
   Ginny: 0
   Choice: 0
   SkipAmount:
   - 1
-  SoundFile: 
+  SoundFile:
+  - Construction
+  - Sad
 --- !u!1001 &1229944135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5807,7 +5844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.193, y: -132.6025}
+  m_AnchoredPosition: {x: 4.9085, y: -153}
   m_SizeDelta: {x: 354.29, y: 74.795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1301511126
@@ -5919,8 +5956,6 @@ MonoBehaviour:
   type: 3
   Manager: {fileID: 358731529}
   SkipAmount: 0
-  MusicSource: {fileID: 903870655}
-  MusicClip: {fileID: 8300000, guid: b0f59cf64f144404b9d056c9fe219da3, type: 3}
 --- !u!1001 &1306638932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6112,7 +6147,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &1362534685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6299,7 +6334,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &1532841133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6557,7 +6592,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5b24d95efc718f04a8e149dc144caa49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77f2d04bbddf7d34e92515ac88154690, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6576,8 +6611,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562527995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.55, y: -13.99, z: 10}
-  m_LocalScale: {x: 1.05, y: 1.05, z: 1}
+  m_LocalPosition: {x: -30.6752, y: -13.8648, z: 10}
+  m_LocalScale: {x: 0.897144, y: 1.0377226, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -6965,7 +7000,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 3
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &1664793558
 GameObject:
   m_ObjectHideFlags: 0
@@ -7018,7 +7053,7 @@ MonoBehaviour:
   SkipAmount:
   - 0
   - '*0-1:2,2:1/*'
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &1667016587
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,7 +7106,7 @@ MonoBehaviour:
   SkipAmount:
   - 0
   - '*HardcodedSectionP3Choice*'
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &1672074152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7257,7 +7292,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &1691069410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7497,7 +7532,7 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &1763021857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7678,7 +7713,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &1780799306
 GameObject:
   m_ObjectHideFlags: 0
@@ -7731,7 +7766,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 5
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &1786791106
 GameObject:
   m_ObjectHideFlags: 0
@@ -7948,7 +7983,8 @@ MonoBehaviour:
   Ginny: 1
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile:
+  - Construction
 --- !u!1001 &1819983682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8447,12 +8483,13 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "Ginny: I\u2019ve got just the solution! We\u2019re going to build a power
-      storage facility to produce and store energy locally. (power up electric hum)
-      It worked!"
+      storage facility to produce and store energy locally. (power up electric hum)"
+    - 'Ginny: It worked!'
   Ginny: 1
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile:
+  - PowerOn
 --- !u!1001 &1963705142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8646,7 +8683,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 3
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &1998146125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8842,7 +8879,7 @@ MonoBehaviour:
   Ginny: 0
   Choice: 0
   SkipAmount: []
-  SoundFile: 
+  SoundFile: []
 --- !u!1 &2027025024
 GameObject:
   m_ObjectHideFlags: 0
@@ -9196,7 +9233,7 @@ MonoBehaviour:
   Choice: 0
   SkipAmount:
   - 1
-  SoundFile: 
+  SoundFile: []
 --- !u!1001 &2079688665
 PrefabInstance:
   m_ObjectHideFlags: 0

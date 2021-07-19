@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     public DateTime Cooldown = DateTime.UtcNow;
     private string CurrentPhase = "";
     public List<int> SelectedChoices = new List<int>();
+    public List<string> SoundFiles = new List<string>();
+    private int SoundIndex = 0;
     public int SkipNum = 0;
     public AudioSource SoundPlayer;
     void Start()
@@ -34,8 +36,10 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue,List<string> SkipAmount, bool IsGinny = false, bool IsChoice = false)
+    public void StartDialogue(Dialogue dialogue,List<string> SkipAmount, List<string>Soundfiles, bool IsGinny = false, bool IsChoice = false)
     {
+        SoundIndex = 0;
+        SoundFiles = Soundfiles;
         if (IsChoice)
         {
             ChangeChoosemenu();
@@ -274,20 +278,36 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (DateTime.UtcNow.Subtract(Cooldown).TotalMilliseconds < 1000 || CurrentPhase == "Choose")
+        if (DateTime.UtcNow.Subtract(Cooldown).TotalMilliseconds < 1500 || CurrentPhase == "Choose")
         {
             return;
         }
         if (sentences.Count == 0)
         {
             EndDialogue(SkipNum);
-            SkipNum = 0;
             return;
+        }
+        if (SoundFiles.Count > 0 && SoundFiles.Count > SoundIndex)
+        {
+            string sound = SoundFiles[SoundIndex];
+
+            if (!String.IsNullOrEmpty(sound))
+            {
+                StartCoroutine(DelayedSound(sound));
+            }
+            SoundIndex++;
         }
         Cooldown = DateTime.UtcNow;
         string sentence = sentences.Dequeue();
         menu.GetComponent<FadeInOutText>().m_Fading = false;
         StartCoroutine(FadeInText(sentence));
+    }
+
+    IEnumerator DelayedSound(string sound)
+    {
+        // This will wait 1 second like Invoke could do, remove this if you don't need it
+        yield return new WaitForSeconds(.75f);
+        ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound(sound);
     }
 
     IEnumerator FadeInText(string sentence)
