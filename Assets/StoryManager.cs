@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoryManager : MonoBehaviour
 {
@@ -14,11 +16,24 @@ public class StoryManager : MonoBehaviour
         GameObject.Find("Trigger").GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 
-    public void LoadNextDialogue()
+    public void LoadNextDialogue(int skipamount = 0)
     {
-        GameObject.Find($"Trigger_{counter}").GetComponent<DialogueTrigger>().TriggerDialogue();
-        counter++;
-        FindObjectOfType<DialogueManager>().DisplayNextSentence();
+        if (skipamount != 0)
+        {
+            counter += skipamount;
+        }
+        GameObject trigger = GameObject.Find($"Trigger_{counter}");
+        if (trigger != null)
+        {
+            trigger.GetComponent<DialogueTrigger>().TriggerDialogue();
+            counter++;
+            FindObjectOfType<DialogueManager>().menu.GetComponent<Text>().text = "";
+            FindObjectOfType<DialogueManager>().DisplayNextSentence();
+        }
+        else
+        {
+            Debug.Log("End");
+        }
 
     }
 
