@@ -244,7 +244,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b514ebd84201803438a3ceaa5cb197dc, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d579de8e0865557458f9680be7ec5e4c, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     sentences:
     - 'Surya Electric Co.: Great job, Ginny! We have restored power to the whole
       city--and made much progress in creating a cleaner future. Thanks for helping
-      us get through summer in Surya! (happy music)'
+      us get through summer in Surya!'
   Ginny: 0
   Choice: 0
   SkipAmount: []
@@ -1072,7 +1072,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "Ginny: Sorry I\u2019m late! Oh, I see your solar panels have been installed
-      already. (sad music) I\u2019ll be sure to arrive earlier next time."
+      already. I\u2019ll be sure to arrive earlier next time."
   Ginny: 1
   Choice: 0
   SkipAmount:
@@ -2099,7 +2099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &480294629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2554,7 +2554,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b514ebd84201803438a3ceaa5cb197dc, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -2819,8 +2819,8 @@ GameObject:
   m_Component:
   - component: {fileID: 656047496}
   - component: {fileID: 656047498}
-  - component: {fileID: 656047497}
   - component: {fileID: 656047499}
+  - component: {fileID: 656047497}
   m_Layer: 5
   m_Name: RegularText
   m_TagString: Untagged
@@ -2856,89 +2856,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 656047495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the not-so-distant future, the city of Surya is experiencing a series
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b514ebd84201803438a3ceaa5cb197dc, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 53
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: In the not-so-distant future, the city of Surya is experiencing a series
     of outages from an overloaded power grid in the middle of sweltering summer heat.
     Ginny the electrical engineer must travel across the city and install clean energy
     solutions to restore power to the metropolis.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &656047498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2959,8 +2904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e4de51f6feaef4983138bbbb1e63b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Image: {fileID: 656047497}
-  Image: {fileID: 0}
+  m_Image: {fileID: 0}
+  Image: {fileID: 656047497}
   m_Fading: 1
 --- !u!1 &670474600
 GameObject:
@@ -3062,11 +3007,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "(Bonus: Phone rings) \r\nSurya Electric Co.: Good morning, Ginny! Some residents
-      recently complained about our scheduled outage in their neighborhood\u2026
-      However, they decided to make use of Surya\u2019s new energy incentives to
-      invest in solar panels that will provide electricity for their homes. Please
-      go to the location marked on your map and help them out.\r"
+    - "Surya Electric Co.: Good morning, Ginny! Some residents recently complained
+      about our scheduled outage in their neighborhood\u2026 However, they decided
+      to make use of Surya\u2019s new energy incentives to invest in solar panels
+      that will provide electricity for their homes. Please go to the location marked
+      on your map and help them out.\r"
     - "Ginny: I\u2019m on my way!"
   Ginny: 1
   Choice: 0
@@ -3688,7 +3633,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b514ebd84201803438a3ceaa5cb197dc, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -4260,8 +4205,8 @@ GameObject:
   m_Component:
   - component: {fileID: 945277284}
   - component: {fileID: 945277287}
-  - component: {fileID: 945277286}
   - component: {fileID: 945277285}
+  - component: {fileID: 945277286}
   m_Layer: 5
   m_Name: GinnyText
   m_TagString: Untagged
@@ -4285,8 +4230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000017166138, y: 16.183186}
-  m_SizeDelta: {x: 962.929, y: 389.094}
+  m_AnchoredPosition: {x: 2.765, y: 9.9308}
+  m_SizeDelta: {x: 1034.826, y: 464.5705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &945277285
 MonoBehaviour:
@@ -4300,8 +4245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e4de51f6feaef4983138bbbb1e63b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Image: {fileID: 945277286}
-  Image: {fileID: 0}
+  m_Image: {fileID: 0}
+  Image: {fileID: 945277286}
   m_Fading: 1
 --- !u!114 &945277286
 MonoBehaviour:
@@ -4312,86 +4257,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 945277283}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: b514ebd84201803438a3ceaa5cb197dc, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 45
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
 --- !u!222 &945277287
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5323,8 +5213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - "Ginny arrives at the hills and installs wind turbines. (wind powers on + happy
-      music)\r"
+    - 'Ginny arrives at the hills and installs wind turbines. '
     - "Surya Electric Co.: Nicely done, Ginny! \r"
   Ginny: 1
   Choice: 0
@@ -5443,7 +5332,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - Ginny arrives at the hills and finds someone else installing the wind turbines
-      already. (Construction sounds + wind powers on)
+      already.
     - "Surya Electric Co.: Ginny, you\u2019re late! Next time, please make sure you
       arrive on time to complete the job. (sad music) "
   Ginny: 0
@@ -7979,7 +7868,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "Ginny: Hi there! I\u2019m Ginny from Surya Electric Co. and I\u2019m here
-      to help you install solar panels. (construction sound + happy music)"
+      to help you install solar panels."
   Ginny: 1
   Choice: 0
   SkipAmount: []
@@ -8483,7 +8372,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - "Ginny: I\u2019ve got just the solution! We\u2019re going to build a power
-      storage facility to produce and store energy locally. (power up electric hum)"
+      storage facility to produce and store energy locally."
     - 'Ginny: It worked!'
   Ginny: 1
   Choice: 0
@@ -9034,7 +8923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2067061154
 RectTransform:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoryManager : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class StoryManager : MonoBehaviour
         {
             trigger.GetComponent<DialogueTrigger>().TriggerDialogue();
             counter++;
-            FindObjectOfType<DialogueManager>().menu.GetComponent<TextMeshProUGUI>().text = "";
+            FindObjectOfType<DialogueManager>().menu.GetComponent<Text>().text = "";
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
         else

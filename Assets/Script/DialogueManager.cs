@@ -314,7 +314,7 @@ public class DialogueManager : MonoBehaviour
     {
         // This will wait 1 second like Invoke could do, remove this if you don't need it
         yield return new WaitForSeconds(1);
-        menu.GetComponent<TextMeshProUGUI>().text = sentence;
+        menu.GetComponent<Text>().text = sentence;
         menu.GetComponent<FadeInOutText>().m_Fading = true;
     }
 
