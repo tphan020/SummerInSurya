@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirstScene : MonoBehaviour
+public class SecondScene : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Path;
     public GameObject Player;
     public PathFollower Follower;
     public Camera MainCamera;
-    public Vector3 CamPosition = new Vector3(-40, -16, -10);
+    public Vector3 CamPosition = new Vector3(-33, -16, -10);
     public Vector3 StartPos;
     public bool MoveCamera = false;
     public bool ReverseCamera = false;
     float Timer;
     float percent = 0;
     public float StartZ = 10;
-    public float EndZ = 5;
+    public float EndZ = 4;
     public DialogueTrigger UsedTrigger;
 
 
@@ -41,7 +41,7 @@ public class FirstScene : MonoBehaviour
                 MoveCamera = false;
                 Follower.SetPositionHolder();
                 Follower.canMove(GetMovementSpeed());
-                Timer = 0;                
+                Timer = 0;
             }
         }
         else if (ReverseCamera)
@@ -69,23 +69,57 @@ public class FirstScene : MonoBehaviour
         List<int> Choices = GameObject.Find("DialogueManager").GetComponent<DialogueManager>().SelectedChoices;
         if (Choices[0] == 3)
         {
-            ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("CarDriving");
-            return 3f;
-        }
-        else if (Choices[1] == 1)
-        {
-            ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Bus");
-            return 2.75f;
-        }
-        else if (Choices[0] == 2)
-        {
-            ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("BicycleDriving");
-            return 2.5f;
+            if (Choices[1] == 1)
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("HighSpeedTrain");
+                return 4f;
+            }
+            else if(Choices[1] == 2)
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Bus");
+                return 2.75f;
+            }
+            else
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("CarDriving");
+                return 3f;
+            }
         }
         else if (Choices[0] == 1)
         {
-            ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Walking");
-            return 1.5f;
+            if (Choices[2] == 1)
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("HighSpeedTrain");
+                return 4f;
+            }
+            else if (Choices[2] == 2)
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Bus");
+                return 2.75f;
+            }
+            else
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Walking");
+                return 1.5f; // Walk
+            }
+        }
+        else if (Choices[0] == 2)
+        {
+            if (Choices[2] == 1)
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("HighSpeedTrain");
+                return 4f;
+            }
+            else if (Choices[2] == 2)
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("Bus");
+                return 2.75f;
+            }
+            else
+            {
+                ((AudioPlayer)FindObjectOfType(typeof(AudioPlayer))).PlaySound("BicycleDriving");
+                return 2.5f; // Bike
+            }
         }
         return 1f;
     }
@@ -94,7 +128,7 @@ public class FirstScene : MonoBehaviour
         UsedTrigger = trigger;
         Path.SetActive(true);
         Player.SetActive(true);
-        Follower.Scene = 1;
+        Follower.Scene = 2;
         Timer = 0;
         MoveCamera = true;
     }

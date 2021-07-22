@@ -516,6 +516,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
+--- !u!1 &80785064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80785066}
+  - component: {fileID: 80785065}
+  m_Layer: 0
+  m_Name: ThirdScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &80785065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80785064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf559022dadc1d54e93f986c87b47e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: {fileID: 1039450418}
+  Player: {fileID: 1621298919}
+  Follower: {fileID: 1039450420}
+  MainCamera: {fileID: 519420031}
+  CamPosition: {x: -36, y: -16, z: -10}
+  StartPos: {x: 0, y: 0, z: 0}
+  MoveCamera: 0
+  ReverseCamera: 0
+  StartZ: 10
+  EndZ: 3
+  UsedTrigger: {fileID: 0}
+--- !u!4 &80785066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80785064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -48.113857, y: -17.745975, z: -0.46950752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &99596780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3095,8 +3149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000017166138, y: 16.183186}
-  m_SizeDelta: {x: 962.929, y: 389.094}
+  m_AnchoredPosition: {x: -5.481, y: 13.2309}
+  m_SizeDelta: {x: 1034.183, y: 379.2529}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656047497
 MonoBehaviour:
@@ -4312,6 +4366,7 @@ MonoBehaviour:
   BackButton: {fileID: 8300000, guid: 0979f93f6c8aaff4fa6a760819f0012e, type: 3}
   Happy: {fileID: 8300000, guid: 0aac244db46813e4ab36a4ff9c72ac0c, type: 3}
   Sad: {fileID: 8300000, guid: 4240a75455797954abf48fefe7b27bb2, type: 3}
+  Walking: {fileID: 8300000, guid: b391a7e5b84b01b47b7fab04d491a2a8, type: 3}
   AudioSource: {fileID: 903870655}
 --- !u!1 &904514443
 GameObject:
@@ -5838,7 +5893,7 @@ MonoBehaviour:
   End: 0
   ThankYou: 0
   Credit: 0
-  PlayScene: 0
+  PlayScene: 2
   DisplayedDialogue: 0
 --- !u!1 &1186346184
 GameObject:
@@ -5962,6 +6017,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c330b9d46e5162549b0547ddc27c9533, type: 3}
+--- !u!1 &1225654797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225654799}
+  - component: {fileID: 1225654798}
+  m_Layer: 0
+  m_Name: SecondScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1225654798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225654797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba632fa46ff3e4c4fbd99dc18e74041a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: {fileID: 1186346184}
+  Player: {fileID: 1621298919}
+  Follower: {fileID: 1186346185}
+  MainCamera: {fileID: 519420031}
+  CamPosition: {x: -33, y: -16, z: -10}
+  StartPos: {x: 0, y: 0, z: 0}
+  MoveCamera: 0
+  ReverseCamera: 0
+  StartZ: 10
+  EndZ: 4
+  UsedTrigger: {fileID: 0}
+--- !u!4 &1225654799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225654797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -48.113857, y: -17.745975, z: -0.46950752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226303370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6010,18 +6119,18 @@ MonoBehaviour:
     - Ginny arrives at the hills and finds someone else installing the wind turbines
       already.
     - "Surya Electric Co.: Ginny, you\u2019re late! Next time, please make sure you
-      arrive on time to complete the job. (sad music) "
+      arrive on time to complete the job."
   Ginny: 0
   Choice: 0
   SkipAmount:
-  - 1
+  - 2
   SoundFile:
   - Construction
   - Sad
   End: 0
   ThankYou: 0
   Credit: 0
-  PlayScene: 0
+  PlayScene: 2
   DisplayedDialogue: 0
 --- !u!1001 &1249930427
 PrefabInstance:
@@ -8792,13 +8901,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: MainMap
+    name: MainMap
     clip: {fileID: 8300000, guid: 85a32222aa389c8479270c9fcab451ed, type: 3}
     volumne: 0.5
     pitch: 1
     source: {fileID: 0}
     loop: 1
-  NameOfSong: MainMap
 --- !u!1001 &1897152288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9406,7 +9514,7 @@ MonoBehaviour:
   End: 0
   ThankYou: 0
   Credit: 0
-  PlayScene: 0
+  PlayScene: 3
   DisplayedDialogue: 0
 --- !u!1001 &2019686409
 PrefabInstance:

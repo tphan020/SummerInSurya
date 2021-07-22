@@ -24,6 +24,7 @@ public class AudioPlayer : MonoBehaviour
     public AudioClip BackButton; 
     public AudioClip Happy;
     public AudioClip Sad;
+    public AudioClip Walking;
     public AudioSource AudioSource;
     void Start()
     {
@@ -34,6 +35,9 @@ public class AudioPlayer : MonoBehaviour
     {
         switch(type)
         {
+            case "Walking":
+                AudioSource.PlayOneShot(Walking, 1.0f);
+                break;
             case "Ring":
                 AudioSource.PlayOneShot(Ring, 1.0f);
                 break;

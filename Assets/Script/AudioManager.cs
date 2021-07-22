@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 //Audio manager class
 public class AudioManager : MonoBehaviour
 {
-	public Sound[] sounds;
+	public Sound sounds;
 	public static AudioManager instance;
-	public string NameOfSong = "";
 	void Awake()
 	{
 
@@ -24,42 +23,32 @@ public class AudioManager : MonoBehaviour
 
 				DontDestroyOnLoad(gameObject);
 		*/
-		foreach (Sound s in sounds)
-		{
-			s.source = gameObject.AddComponent<AudioSource>();
-			s.source.clip = s.clip;
-			s.source.volume = s.volumne;
-			s.source.pitch = s.pitch;
-			s.source.loop = s.loop;
-			print("sound added!, name:" + s.name);
-		}
+		sounds.source = gameObject.AddComponent<AudioSource>();
+		sounds.source.clip = sounds.clip;
+		sounds.source.volume = sounds.volumne;
+		sounds.source.pitch = sounds.pitch;
+		sounds.source.loop = sounds.loop;
 	}
+
+	public void SetVolume(float volume)
+    {
+		sounds.source.volume = volume;
+    }
 
 	void Start()
 	{
-		Play(NameOfSong);
+		Play();
 	}
 
-	public void Play(string name)
+	public void Play()
 	{
-		Sound s = Array.Find(sounds, sound => sound.name == name);
-		if (s == null)
-		{
-			Debug.LogWarning("Sound: " + name + "not found!");
-			return;
-		}
-		s.source.Play();
+
+		sounds.source.Play();
 	}
 
 	public void Stop(string name)
 	{
-		Sound s = Array.Find(sounds, sound => sound.name == name);
-		if (s == null)
-		{
-			Debug.LogWarning("Sound: " + name + "not found!");
-			return;
-		}
-		s.source.Stop();
+		sounds.source.Stop();
 	}
 
 	public void playSoundOnEvent()

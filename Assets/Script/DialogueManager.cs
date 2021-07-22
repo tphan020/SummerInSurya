@@ -97,6 +97,14 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject.Find("FirstScene").GetComponent<FirstScene>().StartScene(trigger);
         }
+        else if (trigger.PlayScene == 2)
+        {
+            GameObject.Find("SecondScene").GetComponent<SecondScene>().StartScene(trigger);
+        }
+        else if (trigger.PlayScene == 3)
+        {
+            GameObject.Find("ThirdScene").GetComponent<ThirdScene>().StartScene(trigger);
+        }
     }
     public string Between(string STR, string FirstString, string LastString)
     {

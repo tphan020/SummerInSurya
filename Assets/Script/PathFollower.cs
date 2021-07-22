@@ -57,6 +57,14 @@ public class PathFollower : MonoBehaviour {
                     {
                         GameObject.Find("FirstScene").GetComponent<FirstScene>().ReverseCamera = true;
                     }
+                    else if (Scene == 2)
+                    {
+                        GameObject.Find("SecondScene").GetComponent<SecondScene>().ReverseCamera = true;
+                    }
+                    else if (Scene == 3)
+                    {
+                        GameObject.Find("ThirdScene").GetComponent<ThirdScene>().ReverseCamera = true;
+                    }
                 }
             }
 
