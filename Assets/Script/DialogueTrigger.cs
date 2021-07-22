@@ -10,10 +10,15 @@ public class DialogueTrigger : MonoBehaviour
     public bool Choice = false;
     public List<string> SkipAmount = new List<string>();
     public List<string> SoundFile;
+    public bool End = false;
+    public bool ThankYou = false;
+    public bool Credit = false;
+    public int PlayScene = 0;
+    public bool DisplayedDialogue = false;
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, SkipAmount, SoundFile, Ginny, Choice);
-        if (Ginny || Choice)
+        FindObjectOfType<DialogueManager>().StartDialogue(this);
+        if ((Ginny || Choice) && (PlayScene == 0  || DisplayedDialogue))
         {
             GameObject.Find("Ginny").GetComponent<Animator>().SetBool("IsOn", true);
         }

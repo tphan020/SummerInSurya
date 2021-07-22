@@ -17,21 +17,13 @@ public class ImageHover : MonoBehaviour
     private Vector2 GameSize = new Vector2();
     private DateTime WaitTime = DateTime.UtcNow;
     private float onTick = 0;
-    private float SkipTime = 5.5f;
+    private float SkipTime = 3f;
     public AudioSource MusicPlayer;
 
     public void Start()
     {
         recttransform = GetComponent<RectTransform>();
         GameSize = GetMainGameViewSize();
-        if (Application.isEditor)
-        {
-            SkipTime = 2.5f;
-        }
-        else
-        {
-            SkipTime = 5.5f;
-        }
     }
     private void FixedUpdate()
     {

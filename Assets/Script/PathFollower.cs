@@ -3,7 +3,6 @@ using System.Collections;
 
 [System.Serializable]
 public class PathFollower : MonoBehaviour {
-    public string name;
     Node[] PathNode;
 
     public GameObject Player;
@@ -15,9 +14,15 @@ public class PathFollower : MonoBehaviour {
 
     public bool isMove = false;
     static Vector3 CurrentPositionHolder;
+    public int Scene = 1;
     void Start() {
         PathNode = GetComponentsInChildren<Node>();
         CheckNode();
+    }
+
+    public void SetPositionHolder()
+    {
+        CurrentPositionHolder = Player.transform.position;
     }
 
     void CheckNode() {
@@ -35,8 +40,9 @@ public class PathFollower : MonoBehaviour {
 
             Timer += Time.deltaTime * MoveSpeed;
 
-            if (Player.transform.position != CurrentPositionHolder) {
+            if (Player.transform.position.x != CurrentPositionHolder.x || Player.transform.position.y != CurrentPositionHolder.y) {
                 Player.transform.position = Vector3.Lerp(startPosition, CurrentPositionHolder, Timer);
+                Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -1);
                 
 
             } else {
@@ -47,6 +53,10 @@ public class PathFollower : MonoBehaviour {
                     System.Array.Reverse(PathNode);
                     CurrentNode = 0;
                     isMove = false;
+                    if (Scene == 1)
+                    {
+                        GameObject.Find("FirstScene").GetComponent<FirstScene>().ReverseCamera = true;
+                    }
                 }
             }
 

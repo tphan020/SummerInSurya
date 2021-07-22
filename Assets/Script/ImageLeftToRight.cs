@@ -9,19 +9,11 @@ public class ImageLeftToRight : MonoBehaviour
     // Start is called before the first frame update
     public Image Image;
     private float onTick = 0;
-    private float SkipTime = 4;
+    private float SkipTime = 1.5f;
 
     private DateTime WaitTime = DateTime.UtcNow;
     void Start()
     {
-        if (Application.isEditor)
-        {
-            SkipTime = 1;
-        }
-        else
-        {
-            SkipTime = 4;
-        }
 
     }
 

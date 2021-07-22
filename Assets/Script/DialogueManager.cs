@@ -18,6 +18,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject GinnyDialogue;
     public GameObject RegularDialogue;
     public GameObject ChooseDialogue;
+    public GameObject EndingDialogue;
+    public GameObject ThankYouDialogue;
+    public GameObject CreditDialogue;
     public GameObject ChoiceA;
     public GameObject ChoiceB;
     public GameObject ChoiceC; 
@@ -36,17 +39,28 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue,List<string> SkipAmount, List<string>Soundfiles, bool IsGinny = false, bool IsChoice = false)
+    public void StartDialogue(DialogueTrigger trigger)//Dialogue dialogue,List<string> SkipAmount, List<string>Soundfiles, bool IsGinny = false, bool IsChoice = false)
     {
-        SoundIndex = 0;
-        SoundFiles = Soundfiles;
-        if (IsChoice)
+        if (trigger.PlayScene != 0 && !trigger.DisplayedDialogue)
         {
-            ChangeChoosemenu();
-            HandleChooseMenu(dialogue, SkipAmount);
+            HandleScene(trigger);
             return;
         }
-        else if (IsGinny)
+        SoundIndex = 0;
+        SoundFiles = trigger.SoundFile;
+        if (trigger.End || trigger.ThankYou || trigger.Credit)
+        {
+            ChangeEndMenu(trigger);
+            HandleEndMenu(trigger);
+            return;
+        }
+        else if (trigger.Choice)
+        {
+            ChangeChoosemenu();
+            HandleChooseMenu(trigger.dialogue, trigger.SkipAmount);
+            return;
+        }
+        else if (trigger.Ginny)
         {
             ChangeGinnymenu();
         }
@@ -54,18 +68,34 @@ public class DialogueManager : MonoBehaviour
         {
             ChangeRegularmenu();
         }
-        if (SkipAmount.Count > 0)
+        if (trigger.SkipAmount.Count > 0)
         {
-            SkipNum = int.Parse(SkipAmount[0]);
+            SkipNum = int.Parse(trigger.SkipAmount[0]);
         }
         else
         {
             SkipNum = 0;
         }
         sentences.Clear();
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in trigger.dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+        }
+        if (trigger.DisplayedDialogue)
+        {
+            DisplayNextSentence();
+        }
+    }
+
+    private void HandleScene(DialogueTrigger trigger)
+    {
+        CurrentPhase = "Scene";
+        GinnyDialogue.SetActive(false);
+        RegularDialogue.SetActive(false);
+        ChooseDialogue.SetActive(false);
+        if (trigger.PlayScene == 1)
+        {
+            GameObject.Find("FirstScene").GetComponent<FirstScene>().StartScene(trigger);
         }
     }
     public string Between(string STR, string FirstString, string LastString)
@@ -275,10 +305,80 @@ public class DialogueManager : MonoBehaviour
         GinnyDialogue.SetActive(false);
         ChooseDialogue.SetActive(true);
     }
-
+    public void ChangeEndMenu(DialogueTrigger trigger)
+    {
+        CurrentPhase = "End";
+        RegularDialogue.SetActive(false);
+        GinnyDialogue.SetActive(false);
+        ChooseDialogue.SetActive(false);
+        if (trigger.End)
+        {
+            EndingDialogue.SetActive(true);
+        }
+        else if (trigger.ThankYou)
+        {
+            EndingDialogue.SetActive(false);
+            ThankYouDialogue.SetActive(true);
+        }
+        else if (trigger.Credit)
+        {
+            EndingDialogue.SetActive(false);
+            ThankYouDialogue.SetActive(false);
+            CreditDialogue.SetActive(true);
+        }
+    }
+    public void HandleEndMenu(DialogueTrigger trigger)
+    {
+        if (trigger.End)
+        {
+            GameObject EndRegularOb = GameObject.Find("EndRegularText");
+            GameObject EndBoldOb = GameObject.Find("EndBoldText");
+            string EndText = EndRegularOb.GetComponent<Text>().text;
+            //EndRegularOb.GetComponent<Text>().text = "";
+            string BoldText = EndBoldOb.GetComponent<Text>().text;
+            //EndBoldOb.GetComponent<Text>().text = "";
+            EndRegularOb.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            EndBoldOb.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            EndRegularOb.GetComponent<FadeInOutText>().durationOn = 2f;
+            EndBoldOb.GetComponent<FadeInOutText>().durationOn = 2f;
+            EndRegularOb.GetComponent<FadeInOutText>().m_Fading = true;
+            EndBoldOb.GetComponent<FadeInOutText>().m_Fading = true;
+        }
+        else if (trigger.ThankYou)
+        {
+            GameObject TYRegularOb = GameObject.Find("TYRegularText");
+            GameObject TYBoldOb = GameObject.Find("TYBoldText");
+            string TYText = TYRegularOb.GetComponent<Text>().text;
+            //EndRegularOb.GetComponent<Text>().text = "";
+            string TYBoldText = TYBoldOb.GetComponent<Text>().text;
+            //EndBoldOb.GetComponent<Text>().text = "";
+            TYRegularOb.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            TYBoldOb.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            TYRegularOb.GetComponent<FadeInOutText>().durationOn = 2f;
+            TYBoldOb.GetComponent<FadeInOutText>().durationOn = 2f;
+            TYRegularOb.GetComponent<FadeInOutText>().m_Fading = true;
+            TYBoldOb.GetComponent<FadeInOutText>().m_Fading = true;
+        }
+        else if (trigger.Credit)
+        {
+            GameObject CredRegularOb = GameObject.Find("CredRegularText");
+            GameObject CredBoldOb = GameObject.Find("CredBoldText");
+            string CredText = CredRegularOb.GetComponent<Text>().text;
+            //EndRegularOb.GetComponent<Text>().text = "";
+            string CredBoldText = CredBoldOb.GetComponent<Text>().text;
+            //EndBoldOb.GetComponent<Text>().text = "";
+            CredRegularOb.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            CredBoldOb.GetComponent<FadeInOutText>().Image.CrossFadeAlpha(0, 0, true);
+            CredRegularOb.GetComponent<FadeInOutText>().durationOn = 2f;
+            CredBoldOb.GetComponent<FadeInOutText>().durationOn = 2f;
+            CredRegularOb.GetComponent<FadeInOutText>().m_Fading = true;
+            CredBoldOb.GetComponent<FadeInOutText>().m_Fading = true;
+        }
+        sentences.Enqueue("");
+    }
     public void DisplayNextSentence()
     {
-        if (DateTime.UtcNow.Subtract(Cooldown).TotalMilliseconds < 1500 || CurrentPhase == "Choose")
+        if (DateTime.UtcNow.Subtract(Cooldown).TotalMilliseconds < 1500 || CurrentPhase == "Choose" || CurrentPhase == "Scene")
         {
             return;
         }

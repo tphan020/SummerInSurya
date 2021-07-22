@@ -11,6 +11,7 @@ public class FadeInOutText : MonoBehaviour
     public Text Image = null;
     //Use this to tell if the toggle returns true or false
     public bool m_Fading = false;
+    public float durationOn = 1;
 
     void FixedUpdate()
     {
@@ -20,7 +21,7 @@ public class FadeInOutText : MonoBehaviour
             if (m_Fading == true)
             {
                 //Fully fade in Image (1) with the duration of 2
-                m_Image.CrossFadeAlpha(1, 1f, true);
+                m_Image.CrossFadeAlpha(1, durationOn, true);
             }
             //If the toggle is false, fade out to nothing (0) the Image with a duration of 2
             if (m_Fading == false)
@@ -33,7 +34,7 @@ public class FadeInOutText : MonoBehaviour
             if (m_Fading == true)
             {
                 //Fully fade in Image (1) with the duration of 2
-                Image.CrossFadeAlpha(1, 1f, true);
+                Image.CrossFadeAlpha(1, durationOn, true);
             }
             //If the toggle is false, fade out to nothing (0) the Image with a duration of 2
             if (m_Fading == false)
